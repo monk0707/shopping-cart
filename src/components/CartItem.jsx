@@ -15,7 +15,7 @@ const CartItem = ({item,itemIndex}) => {
   return(
     <div className="p-4 border-b-2 last:border-none border-slate-700">
 
-    <div className="flex justify-between py-3.5 px-2.5 gap-14 flex-col md:flex-row bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-rose-100 to-teal-100  rounded-lg">
+    <div className="flex justify-between py-3.5 px-2.5 gap-14 flex-col md:flex-row bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-100 to-blue-300  rounded-lg">
 
       <div className="md:w-[30%] w-full flex justify-center items-center">
         <img src={item.image} alt="" className="w-[40%] md:w-[50%] lg:w-full rounded-sm hover:scale-110 transition duration-300 ease-in hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"/>
@@ -26,7 +26,7 @@ const CartItem = ({item,itemIndex}) => {
           item.description.split(" ").slice(0,15).join(" ") + "..."}
         </h1>
         <div className="flex justify-between">
-          <p className="font-bold text-white text-lg">${item.price}</p>
+          <p className="font-bold text-blue text-lg">${item.price}</p>
           <div
           onClick={removeFromCart}
           className="w-10 h-10 rounded-full bg-red-200 flex justify-center items-center

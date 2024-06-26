@@ -10,7 +10,7 @@ const App = () => {
       <div className=" bg-slate-900 w-full">
         <Navbar/>
       </div>
-      <div className="bg-gradient-to-r from-sky-400 to-blue-500">
+      <div className="bg-gradient-to-r from-green-300 to-green-500">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/cart" element={<Cart/>}/>
